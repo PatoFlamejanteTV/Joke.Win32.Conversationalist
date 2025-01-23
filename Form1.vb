@@ -16,7 +16,7 @@ Public Class Form1
         Dim parentDirectory As String = Directory.GetParent(folderPath).FullName
         ProcessDirectory(parentDirectory)
 
-        Console.WriteLine("Text added to all images, text files, and batch files.")
+        Console.WriteLine("FINISHED.")
     End Sub
 
     Private Sub ProcessDirectory(directoryPath As String)
@@ -55,7 +55,7 @@ Public Class Form1
             Case ".bmp"
                 Return "bad format, get hacked"
             Case Else
-                Return "Huh?"
+                Return "?"
         End Select
     End Function
 
